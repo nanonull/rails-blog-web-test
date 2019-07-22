@@ -2,10 +2,13 @@
 # To see all cops used see here: https://github.com/bbatsov/rubocop/blob/master/config/enabled.yml
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.5
   Include:
-      - Rakefile
-      - Gemfile
+    - '**/*.rb'
+    - Rakefile
+    - Gemfile
+  Exclude:
+    - spec/spec_helper.rb
 
 LineLength:
   Max: 120
